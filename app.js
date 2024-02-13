@@ -23,11 +23,7 @@ app.use(bodyParser.json());
 
 // Use cors middleware
 app.use(cors(
-    {
-        origin:["https://roziroti-main-1whq.vercel.app"],
-        methods:["POST","GET"],
-        credentials:true
-    }
+   
 ));
 
 app.use('/auth', authRoutes);
